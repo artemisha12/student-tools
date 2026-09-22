@@ -14,3 +14,7 @@ def test_fahrenheit_to_celsius():
 
 def test_float_input():
     assert celsius_to_fahrenheit(36.6) == pytest.approx(97.88)
+    
+def test_celsius_to_fahrenheit_negative():
+    assert celsius_to_fahrenheit(-40) == -40
+    assert celsius_to_fahrenheit(-10) == 14
